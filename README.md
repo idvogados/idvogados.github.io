@@ -1,9 +1,9 @@
 # Drive
-[Esse é o nosso google drive](drive.google.com/). Nele você encontrará todos os arquivos de reuniões e etc
+Em breve!
 
 # Slack
-[Esse é o nosso slack](slack.com/) utilizado para discussões
+Em breve!
 
 # Discord
-[Esse é o nosso discord](slack.com/) utilizado para reuniões/chamdas
+Em breve!
 
