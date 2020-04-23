@@ -1,3 +1,8 @@
+title: idvogados
+description: Nós somo a comunidade voluntária
+# logo: [Location of the logo]
+show_downloads: false
+# google_analytics: [Your Google Analytics tracking ID]
 plugins:
   - jekyll-relative-links
 relative_links:
@@ -12,3 +17,4 @@ include:
   # - CONTRIBUTING.md
   # - ISSUE_TEMPLATE.md
   # - PULL_REQUEST_TEMPLATE.md
+theme: jekyll-theme-minimal

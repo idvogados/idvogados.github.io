@@ -1,6 +1,3 @@
-# idvogados.github.io
-Olá, essa é nossa página
-
 # Drive
 [Esse é o nosso google drive](drive.google.com/). Nele você encontrará todos os arquivos de reuniões e etc
 
