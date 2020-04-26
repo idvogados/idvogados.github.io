@@ -63,7 +63,7 @@ Para o bom funcionamento da comunidade, algumas práticas são desejáveis do co
 
 ### A. Respeito a comunidade e a ideias diferentes da sua
 
-Antes de mais nada é necessário que você fique ciente de que, por se tratar de uma comunidade aberta (Open Source), você poderá entrar ideias diferentes da sua.
+Antes de mais nada é necessário que você fique ciente de que, por se tratar de uma comunidade aberta (Open Source), você poderá encontrar ideias diferentes da sua.
 
 É de fundamental importância para o **idvogados** que você respeite estas ideias. Debater ideias, conceitos e escopos são comportamentos bem-vindos, desde que estes não firam a intimidade e direito de livre expressão de outro colaborador.
 
@@ -77,7 +77,7 @@ Como membro colaborador, você não irá:
 - Usar qualquer material ou informação, incluindo imagens ou fotografias, por meio da Plataforma de qualquer forma que infrinja os direitos autorais, marcas, patentes, segredos comerciais ou outro direito de propriedade de terceiros.
 - Enviar arquivos que contenham vírus, cavalos de Troia, worms ou qualquer outro programa similar que possa danificar o computador ou qualquer propriedade de outras pessoas.
 - Organizar ataques contra um servidor ou contra a própria Plataforma
-- Usar o Plataforma para pesquisas, concursos, esquemas de pirâmide, correntes, lixo eletrônico, spam ou qualquer mensagem repetida ou não solicitada (comercial ou não).
+- Usar a Plataforma para pesquisas, concursos, esquemas de pirâmide, correntes, lixo eletrônico, spam ou qualquer mensagem repetida ou não solicitada (comercial ou não).
 - Difamar, insultar, assediar, perseguir, ameaçar ou violar os direitos legais (tais como direitos de imagem e de privacidade) de outras pessoas.
 - Praticar qualquer ato de constrangimento, coação, ou que causem desconfortos físicos, mentais ou emocionais a terceiros, incluindo, porém não se limitando a: outros colaboradores, usuários, terceiros interessados em conhecer a plataforma.
 - Restringir ou inibir o acesso de qualquer usuário aos serviços, softwares e outros conteúdos do Plataforma.
@@ -121,9 +121,9 @@ Destas atividades não raramente serão criados documentos internos e públicos,
 
 Assim, o colaborador deverá estar ciente dos seguintes aspectos:
 
-* Ao enviar, postar, compartilhar, ou citar conteúdo através desta comunidade, você concede ao **idvogados** uma licença mundial, não exclusiva, isenta de royalties (com o direito de sublicenciar) para usar, copiar, reproduzir, processar, adaptar, modificar, publicar, transmitir, exibir e distribuir tal conteúdo em todos e quaisquer meios ou métodos de distribuição (agora conhecidos ou posteriormente desenvolvidos), sem compensação pecuniária (ou qualquer outra forma de compensação). Além disso, o você garante, declara e concorda que tem o direito de conceder tal licença para o **idvogados** como descrito acima.
+* Ao enviar, postar, compartilhar, ou citar conteúdo através desta comunidade, você concede ao **idvogados** uma licença mundial, não exclusiva, isenta de royalties (com o direito de sublicenciar) para usar, copiar, reproduzir, processar, adaptar, modificar, publicar, transmitir, exibir e distribuir tal conteúdo em todos e quaisquer meios ou métodos de distribuição (agora conhecidos ou posteriormente desenvolvidos), sem compensação pecuniária (ou qualquer outra forma de compensação). Além disso, você garante, declara e concorda que tem o direito de conceder tal licença para o **idvogados** como descrito acima.
 * Os conteúdos produzidos pelos colaboradores poderão ser utilizados em sua integralidade, em sua forma original ou modificada, em produção de peças publicitárias, de comunicação, briefing e outros documentos públicos ou internos.
-* Você também garante e concorda que não tem e não vai contribuir com qualquer conteúdo que: viole direitos autorais ou marca registrada de outra parte; revele qualquer segredo comercial, a menos que o segredo comercial pertença ao você mesmo ou se ele tiver a permissão do proprietário para divulgá-las; viole qualquer direito de propriedade intelectual de outro ou os direitos de privacidade ou publicidade de terceiros; seja calunioso, difamatório, abusivo, ameaçador, ofensivo, odioso ou que violem qualquer um dos aspectos contidos no item _3. O que esperamos dos Colaboradores?_; e que não estejam em conformidade com outros termos de uso da Plataforma.
+* Você também garante e concorda que não tem e não vai contribuir com qualquer conteúdo que: viole direitos autorais ou marca registrada de outra parte; revele qualquer segredo comercial, a menos que o segredo comercial pertença a você mesmo ou se tiver a permissão do proprietário para divulgá-las; viole qualquer direito de propriedade intelectual de outro ou os direitos de privacidade ou publicidade de terceiros; seja calunioso, difamatório, abusivo, ameaçador, ofensivo, odioso ou que violem qualquer um dos aspectos contidos no item _3. O que esperamos dos Colaboradores?_; e que não estejam em conformidade com outros termos de uso da Plataforma.
 
 ---
 
