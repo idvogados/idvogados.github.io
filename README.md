@@ -12,4 +12,4 @@ Entre no [nosso discord](https://discord.gg/b5a7Pct) e acompanhe encontros
 Nosso código de conduta pode ser encontrado [nesse link](code-of-conduct/)
 -->
 # Termos de uso
-Nossos Termos de uso podem ser encontrado [nesse link](https://github.com/idvogados/idvogados.github.io/blob/master/Docs/Termos%20de%20Uso%20(Colaboradores).md)
+Nossos Termos de uso podem ser encontrado [nesse link](https://idvogados.github.io/termos-de-uso/)
