@@ -1,6 +1,6 @@
 # O que é?
-O iDvogados é uma aplicação (PWA) que conecta entregadores de aplicativos de delivery que necessitam de suporte jurídico com profissionais que queiram auxiliá-los com suas causas através da advocacia pró-bono.
-O iDvogados se diferencia de outros aplicativos que conectam pessoas (Uber, GetNinjas, Airbnb etc), pois ele não cobra nada para fazer essa conexão.
+O iDvogados é uma aplicação (PWA) que conecta entregadores de aplicativos de delivery que necessitam de suporte jurídico com advogados que queiram auxiliá-los com suas causas exercendo advocacia pró-bono.
+Ele se diferencia de outros markeplaces que conectam pessoas, pois não cobra nada para fazer essa conexão.
 
 # Como surgiu?
 [![Assista o vídeo do Greg News](https://iili.io/JarXJj.png)](https://youtu.be/v3B9w6wWNQA?t=1865) 
