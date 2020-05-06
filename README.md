@@ -4,9 +4,10 @@ Ele se diferencia de outros markeplaces que conectam pessoas, pois não cobra na
 
 # Como surgiu?
 [![Assista o vídeo do Greg News](https://iili.io/JarXJj.png)](https://youtu.be/v3B9w6wWNQA?t=1865) 
-
+<!--
 # Nossas diretrizes
 ![Diretrizes do iDvogados](https://iili.io/JarfHv.png)
+-->
 
 # Como posso colaborar?
 Entre no [nosso Discord](https://discord.gg/b5a7Pct). Contribua compartilhando suas ideias, opiniões e acompanhando nossos encontros
