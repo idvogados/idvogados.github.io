@@ -16,4 +16,4 @@ Nossos documentos oficiais estão disponíveis no [nosso Google Drive](https://d
 Nosso código de conduta pode ser encontrado [nesse link](code-of-conduct/)
 -->
 # Termos de uso
-Nossos Termos de uso podem ser encontrado [nesse link](https://idvogados.github.io/termos-de-uso/)
+Nossos Termos de uso podem ser encontrado [nesse link](http://www.idvogados.org/termos-de-uso/)
