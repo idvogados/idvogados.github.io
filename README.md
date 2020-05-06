@@ -1,4 +1,4 @@
-# O que é?
+# Sobre o iDvogados
 O iDvogados é uma aplicação (PWA) que conecta entregadores de aplicativos de delivery que necessitam de suporte jurídico com advogados que queiram auxiliá-los com suas causas exercendo advocacia pró-bono.
 Ele se diferencia de outros markeplaces que conectam pessoas, pois não cobra nada para fazer essa conexão.
 
@@ -9,9 +9,9 @@ Ele se diferencia de outros markeplaces que conectam pessoas, pois não cobra na
 ![Diretrizes do iDvogados](https://iili.io/JarfHv.png)
 
 # Como posso colaborar?
-Entre no [nosso discord](https://discord.gg/b5a7Pct), contribua compartilhando ideias, opiniões e acompanhando nossos encontros
+Entre no [nosso Discord](https://discord.gg/b5a7Pct). Contribua compartilhando suas ideias, opiniões e acompanhando nossos encontros
 
-# Onde estão os arquivos importantes?
+# Drive
 Nossos documentos oficiais estão disponíveis no [nosso Google Drive](https://drive.google.com/open?id=1ViXEGXaqolB2hwR5xazHvXEjQAlPupgj)
 
 <!--
