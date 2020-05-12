@@ -4,9 +4,9 @@ O iDvogados é um aplicativo que conecta entregadores de aplicativos de delivery
 # Você faz parte desses dois públicos? 
 Ajude-nos com nossa pesquisa! Selecione abaixo qual é o seu perfil:
 
-![Sou entregador](https://iili.io/J0ND8l.png) (https://forms.gle/LVPZmNX79tz5sY1o9)
+[![Sou entregador](https://iili.io/J0ND8l.png)](https://forms.gle/LVPZmNX79tz5sY1o9)
 
-![Sou advogado/bacharel de Direito](https://iili.io/J0OQx1.png) (https://forms.gle/uTdaiD3MTT9cAETF6)
+[![Sou advogado/bacharel de Direito](https://iili.io/J0OQx1.png)](https://forms.gle/uTdaiD3MTT9cAETF6)
 
 # Como surgiu?
 [![Assista o vídeo do Greg News](https://iili.io/JarXJj.png)](https://youtu.be/v3B9w6wWNQA?t=1862) 
