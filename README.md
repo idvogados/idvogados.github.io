@@ -1,15 +1,5 @@
 # Sobre o iDvogados
-O iDvogados é um aplicativo que conecta entregadores de aplicativos de delivery que necessitam de suporte jurídico para sanar as más condições de trabalho com advogados que queiram auxiliá-los exercendo advocacia pró-bono. Esse aplicativo se diferencia de outros que tem o objetivo de conectar pessoas como Uber, GetNinjas, entre outros, pois não cobra nada por essa conexão!
-
-# Você faz parte desse público? 
-Ajude-nos respondendo nossa pesquisa! Selecione seu perfil abaixo:
-
-[![Sou entregador](https://iili.io/J0ND8l.png)](./entregador)
-
-[![Sou advogado/bacharel de Direito](https://iili.io/J0OQx1.png)](./advogado)
-
-# Como surgiu?
-[![Assista o vídeo do Greg News](https://iili.io/JarXJj.png)](https://youtu.be/v3B9w6wWNQA?t=1862) 
+O iDvogados é um aplicativo que conecta pessoas que necessitam de suporte jurídico com advogados que queiram auxiliá-los exercendo advocacia pró-bono. Esse aplicativo se diferencia de outros que tem o objetivo de conectar pessoas como Uber, GetNinjas, entre outros, pois não cobra nada por essa conexão!
 
 # Como posso colaborar?
 Entre no [nosso Discord](https://discord.gg/b5a7Pct). Contribua compartilhando suas ideias, opiniões e acompanhando nossos encontros
