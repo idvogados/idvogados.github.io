@@ -1,0 +1,38 @@
+/**
+ * Configure aqui a aparência geral do tema.
+ */
+$primaryColor: map-get($theme, primaryColor) !default;
+$primaryColorDark: map-get($theme, primaryColorDark) !default;
+$primaryColorLighten: map-get($theme, primaryColorLighten) !default;
+$primaryColorContrast: map-get($theme, primaryColorContrast) !default;
+$secondaryColor: map-get($theme, secondaryColor) !default;
+$secondaryColorDark: map-get($theme, secondaryColorDark) !default;
+$secondaryColorLighten: map-get($theme, secondaryColorLighten) !default;
+$secondaryColorContrast: map-get($theme, secondaryColorContrast) !default;
+$tertiaryColor: map-get($theme, tertiaryColor) !default;
+$tertiaryColorDark: map-get($theme, tertiaryColorDark) !default;
+$tertiaryColorLighten: map-get($theme, tertiaryColorLighten) !default;
+$tertiaryColorContrast: map-get($theme, tertiaryColorContrast) !default;
+$mediumColor: map-get($theme, mediumColor) !default;
+$mediumColorDark: map-get($theme, mediumColorDark) !default;
+$mediumColorLighten: map-get($theme, mediumColorLighten) !default;
+$mediumColorContrast: map-get($theme, mediumColorContrast) !default;
+$lightColor: map-get($theme, lightColor) !default;
+$lightColorDark: map-get($theme, lightColorDark) !default;
+$lightColorLighten: map-get($theme, lightColorLighten) !default;
+$lightColorContrast: map-get($theme, lightColorContrast) !default;
+
+// Breakpoints
+$breakpoints: (
+  sm: 769px,
+  md: 1025px,
+  lg: 1281px
+);
+
+// Margens
+$itemMargin: 12px;
+
+// Tamanhos
+$widthContainerSM: 704px;
+$widthContainerMD: 824px;
+$widthContainerLG: 1080px;

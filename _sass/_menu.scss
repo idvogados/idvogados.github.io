@@ -1,0 +1,79 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body.has-push-menu,
+body.has-push-menu aside,
+body.has-push-menu .progress-bar {
+  transition: all 0.3s ease;
+}
+
+body.has-push-menu {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+
+  &.push-menu-to-right {
+    left: 100vw;
+    overflow: hidden;
+
+    .progress-bar {
+      left: 100vw;
+    }
+
+    .bar-header {
+      left: 100vw;
+    }
+  }
+}
+
+aside.sidebar {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: -100vw;
+  background-color: $primaryColor;
+  z-index: 20;
+
+  &.open {
+    left: 0;
+  }
+
+  h2 {
+    margin: 0 rem(20px) 0;
+    @include mainFont(400);
+    font-size: rem(18px);
+    color: $mediumColorDark;
+    border-bottom: 1px solid $mediumColorDark;
+    line-height: 50px;
+  }
+
+  nav {
+    margin: rem(32px);
+    
+    .svg {
+      cursor: pointer;
+      line-height: 0;
+
+      .icon-menu {
+        margin: 4px;
+        width: rem(24px);
+        height: rem(24px);
+        fill: $primaryColorContrast;
+      }
+
+    }
+    .links {
+      flex-direction: column;
+      padding-top: 70px;
+      font-size: 28px;
+      text-transform: capitalize;
+      .link-anchor {
+        margin: 0 0 48px 0;
+      }
+    }
+  }
+}

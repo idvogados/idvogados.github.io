@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}" class="no-js">
+    {% include head.html %}
+    <body class="has-push-menu">
+        {% include minutes-to-read.html %}
+        {% include svg-icons.html %}
+        {% include header.html %}
+
+        <section class="post one-column">
+            <article role="article" class="post-content">
+                <p class="post-info">
+                    {% if page.date %}
+                        <svg class="icon-calendar" id="date"><use xlink:href="#icon-calendar"></use></svg>
+                        <time class="date" datetime="{{ page.date | date_to_xmlschema }}">
+                            {% include date.html date=page.date %}
+                        </time>
+                    {% endif %}
+                    <svg id="clock" class="icon-clock"><use xlink:href="#icon-clock"></use></svg>
+                    <span>{{ minutesText }}</span>
+                </p>
+                <h1 class="post-title">{{ page.title }}</h1>
+                <p class="post-subtitle">{{ page.subtitle }}</p>
+
+                {% if page.image %}
+                    <img src="{{ page.image }}" alt="Featured image" class="post-cover">
+                {% endif %}
+
+                {{ content }}
+
+            </article>
+
+        </section>
+
+        <!-- Add time bar only for pages without pagination -->
+        <!-- {% if paginator.activated == nil %} -->
+            <!-- {% include recommendation.html %} -->
+        <!-- {% endif %} -->
+
+        <!-- Show modal before user leaves the page -->
+        {% if site.show_modal_on_exit %}
+            {% include modal.html title="Não vá ainda!" subtitle="Você pode gostar..." closed=true showOnExit=true %}
+        {% endif %}
+
+        {% include share.html %}
+        {% include author.html %}
+        {% include comments.html %}
+        {% include footer.html %}
+
+        {% assign author = site.authors | where: "name", post.author | first %}
+
+        {% assign author_urls = '' %}
+        {% if author.github_username %}
+            {% assign author_urls = author_urls | append: '"https://github.com/' | append: author.github_username | append: '",' %}
+        {% endif %}
+        {% if author.facebook_username %}
+            {% assign author_urls = author_urls | append: '"https://www.facebook.com/' | append: author.facebook_username | append: '",' %}
+        {% endif %}
+        {% if author.twitter_username %}
+            {% assign author_urls = author_urls | append: '"https://twitter.com/' | append: author.twitter_username | append: '",' %}
+        {% endif %}
+        {% if author.medium_username %}
+            {% assign author_urls = author_urls | append: '"https://medium.com/@' | append: author.medium_username | append: '",' %}
+        {% endif %}
+        {% if author.instagram_username %}
+            {% assign author_urls = author_urls | append: '"https://www.instagram.com/' | append: author.instagram_username | append: '",' %}
+        {% endif %}
+        {% if author.linkedin_username %}
+            {% assign author_urls = author_urls | append: '"https://www.linkedin.com/in/' | append: author.linkedin_username | append: '",' %}
+        {% endif %}
+        {% if page.math %}
+        <script>
+            MathJax = {
+                tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+                }
+            };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+        {% endif %}
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "BlogPosting",
+            "name": "{{ page.title }}",
+            "headline": "{{ page.subtitle }}",
+            "description": "{{ page.description }}",
+            "image": "{{ page.image }}",
+            "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
+            "articleBody": "{{ content | strip_html | xml_escape | textilize }}",
+            "wordcount": "{{ content | number_of_words }}",
+            "inLanguage": "{{ site.language }}",
+            "dateCreated": "{{ page.date | date: '%Y-%m-%d/' }}",
+            "datePublished": "{{ page.date | date: '%Y-%m-%d/' }}",
+            "dateModified": "{{ page.date | date: '%Y-%m-%d/' }}",
+            "author": {
+                "@type": "Person",
+                "name": "{{ author.display_name }}",
+                {% if author.photo %}
+                "image": "{{ author.photo }}",
+                {% else %}
+                "image": {{ "/assets/img/user.jpg" | prepend: site.baseurl | prepend: site.url }},
+                {% endif %}
+                "jobTitle": "{{ author.bio }}",
+                "url": "{{ author.url | prepend: site.baseurl | prepend: site.url }}",
+                "sameAs": [
+                    {{ author_urls | split: "," | join: "," }}
+                ]
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "{{ site.name }}",
+                "url": "{{ site.url }}{{site.baseurl}}/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "{{ site.url }}{{site.baseurl}}/assets/img/blog-image.png",
+                    "width": "600",
+                    "height": "315"
+                }
+            },
+            "mainEntityOfPage": "True",
+            "genre": "{{ page.category }}",
+            "articleSection": "{{ page.category }}",
+            "keywords": [{{ page.tags | join: '","' | append: '"' | prepend: '"' }}]
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+{% for item in site.link-anchor %}
+  {% if item.title and item.url %}
+    {% if page.url == item.url+"/" %}
+      {% assign active = "active" %}
+    {% else %}
+      {% assign active = "" %}
+    {% endif %}
+    <li class="link-anchor {{active}}">
+      <a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}" target="_self">{{ item.title }}</a>
+    </li>
+  {% endif %}
+{% endfor %}

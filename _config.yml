@@ -1,13 +1,69 @@
+# Site Settings
+name: idvogados
 title: idvogados
-description: Uma comunidade voluntária
-# logo: [Location of the logo]
-show_downloads: false
-# google_analytics: [Your Google Analytics tracking ID]
-# plugins:
-  # - jekyll-relative-links
-# relative_links:
-  # enabled: true
-  # collections: true
-include:
-  - README.md
-theme: jekyll-theme-minimal
+description: Plataforma gratuita conectando trabalhadores e advogados.
+tags:
+  - blog
+email: contato@idvogados.org
+disqus_username: teste-tltriyttat
+link-anchor:
+  - title: Home
+    url: /
+  - title: Blog
+    url: /blog/
+link-button:
+  - title: Quero Colaborar
+    url: /colabore/
+link-footer:
+  - title: Termos de Uso
+    url: /termos-de-uso/
+  - title: Privacidade
+    url: /privacidade/
+  - title: Imprint
+    action: window.print()
+copyrightYear: 2020
+
+# Social Media Settings
+# Remove the item if you don't need it
+github_username: idvogados
+facebook_username: idvogados
+twitter_username: idvogados
+instagram_username: idvogados
+linkedin_username: idvogados
+
+# Posts Settings
+show_modal_on_exit: true
+
+
+# Advanced Settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+google_analytics: "UA-XXXXXXXX-X"
+language: "pt-BR"
+categories_folder: category
+
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+collections:
+  authors:
+    output: true
+
+# SASS
+sass:
+  style: compressed
+
+# Exclude my node related stuff
+exclude: [
+  'package.json',
+  'package-lock.json',
+  'src',
+  'node_modules',
+  'initpost.sh',
+  'Gemfile',
+  'Gemfile.lock',
+  'gulpfile.js',
+  'README.md'
+]

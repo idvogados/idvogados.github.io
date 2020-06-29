@@ -1,0 +1,23 @@
+name: idvogados
+title: idvogados
+description: Plataforma gratuita conectando trabalhadores e advogados.
+tags:
+  - blog
+email: contato@idvogados.org
+disqus_username: teste-tltriyttat
+link-anchor:
+  - title: Home
+    url: /
+  - title: Blog
+    url: /blog/
+link-button:
+  - title: Quero Colaborar
+    url: /colabore/
+link-footer:
+  - title: Termos de Uso
+    url: /termos-de-uso/
+  - title: Privacidade
+    url: /privacidade/
+  - title: Imprint
+    action: window.print()
+copyrightYear: 2020

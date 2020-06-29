@@ -1,0 +1,21 @@
+<header class="bar-header">
+  <div class="navbar-content">
+    <a class="svg only-mobile"  id="menu" role="button">
+      <svg id="open" class="icon-menu"><use xlink:href="#icon-menu"></use></svg>
+    </a>
+    <div class="logo-area">
+      <a class="logo" href="{{ site.baseurl }}/">
+        {% include logo.html %}
+      </a>
+    </div>
+    <ul class="links hide-mobile">
+      {% include link-anchor.html %}
+      {% include link-button.html %}
+    </ul>
+    <div class="only-mobile"></div>
+  </div>
+</header>
+
+<!-- <div id="mask" class="overlay"></div> -->
+
+{% include menu.html %}

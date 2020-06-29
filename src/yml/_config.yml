@@ -1,0 +1,37 @@
+# Site Settings
+#=include site.yml
+
+# Social Media Settings
+# Remove the item if you don't need it
+#=include social.yml
+
+# Posts Settings
+#=include posts.yml
+
+# Advanced Settings
+#=include advanced.yml
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+collections:
+  authors:
+    output: true
+
+# SASS
+sass:
+  style: compressed
+
+# Exclude my node related stuff
+exclude: [
+  'package.json',
+  'package-lock.json',
+  'src',
+  'node_modules',
+  'initpost.sh',
+  'Gemfile',
+  'Gemfile.lock',
+  'gulpfile.js',
+  'README.md'
+]
