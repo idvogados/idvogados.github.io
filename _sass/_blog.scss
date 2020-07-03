@@ -41,7 +41,7 @@
 
   @include media(">=md") {
     
-    max-width: calc(100%/3 - #{$itemMargin * 2});
+    max-width: calc(100%/3 - #{$itemMargin});
     flex: 1 0 calc(100%/3 - #{$itemMargin * 2});
 
     &:nth-child(3n) {
@@ -75,6 +75,12 @@
   .box-body {
     border: 2px $mediumColorLighten solid;
     border-radius: 10px;
+    background-color: $primaryColorContrast;
+    
+    &:hover {
+      background-color: $lightColor;
+    }
+
     img {
       width: 100%;
       height: auto;
@@ -128,9 +134,7 @@
       margin: 0;
       text-transform: uppercase;
       transition: all 0.3s;
-      &:not(:first-child) {
-        margin-left: 12px;
-      }
+      margin-bottom: 4px;
       &:hover {
         color: $lightColor;
         background: $mediumColor;

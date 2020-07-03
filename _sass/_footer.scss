@@ -1,5 +1,7 @@
 .comments {
   margin: auto;
+  margin-bottom: 100px;
+
   @include media("<md") {
     margin: 0 32px;
   }
@@ -20,7 +22,6 @@
 footer {
   background-color: $primaryColor;
   color: $primaryColorContrast;
-  margin-top: 100px;
   font-weight: 400;
   .row {
     flex-flow: row wrap;
@@ -39,7 +40,7 @@ footer {
     @include media(">=lg") {
       max-width: $widthContainerLG;
     }
-    .links {
+    .links-footer {
       display: flex;
       flex-flow: row wrap;
       padding: 0px;
@@ -53,6 +54,7 @@ footer {
       }
       a {
         font-size: rem(14px) !important;
+        line-height: 48px;
       }
     }
     .col {      
@@ -62,6 +64,8 @@ footer {
 
       @include media("<sm") {
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
         display: flex;
         flex-wrap: wrap;
         text-align: center;
@@ -90,42 +94,20 @@ footer {
       .email {
         margin: 0px 0px 20px 0px;
       }
-      li {      
-        &.active {
-          font-weight: 500;        
-          &:before {
-            display: none !important;
-          }
-        }
-        &.anchor {
-          margin: 0px 20px;
-          position: relative;
-          &:before {
-            content: "";
-            width: 22px;
-            height: 4px;
-            position: absolute;
-            background-color: $primaryColorContrast;
-            bottom: 0px;
-            display: none;
-          }
-          &:hover:before {
-            display: block;
-          }
-        }
-      }
       .social-media {
         display: flex;
         margin: 0px;
         a {
           background-color: $primaryColorContrast;
           color: $primaryColor;
-          margin-right: rem(10px);
           display: flex;
           padding: 8px;
           border-radius: 100%;
-          @include media(">=sm") {
-            margin-right: rem(20px);
+          &:not(:first-child) {
+            margin-left: rem(10px);
+            @include media(">=sm") {
+              margin-left: rem(20px);
+            }
           }
           svg {
             @include size(20, 20);
@@ -138,9 +120,9 @@ footer {
       a {
         display: inline-block;
         color: inherit;
-        // fill: #808080;
         transition: all 0.3s ease;
         text-decoration: none;
+        line-height: 48px;
         
         &:hover {
           fill: $primaryColor;

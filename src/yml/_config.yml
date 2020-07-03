@@ -11,17 +11,36 @@
 # Advanced Settings
 #=include advanced.yml
 
+# Pagination Settings
+paginate_path: "/page/:num/"
+pagination:
+  enabled: true
+  per_page: 6
+  permalink: '/page/:num/'
+  title_suffix: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
 # Build settings
+# paginate: 5
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
 collections:
   authors:
     output: true
+categories_folder: category
 
 # SASS
 sass:
   style: compressed
+
+  
+# Plugins
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-paginate-content
 
 # Exclude my node related stuff
 exclude: [

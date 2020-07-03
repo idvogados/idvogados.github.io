@@ -4,39 +4,37 @@ layout: main
 
 {% assign posts = site.posts | where_exp:"post","post.is_generated != true" %}
 
-<section class="content">
-  <main class="blog" id="post" role="main">
-    <header>
-      <h1>{{page.title}}</h1>
-      <p>{{page.description}}</p>
-    </header>
-    <div id="grid" class="row flex-grid">
-      {% assign posts = site.posts | where_exp:"post","post.is_generated != true" %}
-      {% for post in posts %}
-        {% if post.category == page.slug %}
-          <article class="box-item">
-            <div class="box-body">
-              <div class="box-info">
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                  <h2 class="post-title">
-                    {{ post.title }}
-                  </h2>
-                </a>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                  <p class="description">{{ post.description }}</p>
-                </a>              
-                <div>
-                  {% for tag in post.tags %}
-                    {% if tag != "" %}
-                      <a class="category" href="{{ site.baseurl}}/tags/#{{tag | slugify }}">{{ tag }}</a>
-                    {% endif %}
-                  {% endfor %}
-                </div>
+<main class="blog" id="post" role="main">
+  <header>
+    <h1>{{page.title}}</h1>
+    <p>{{page.description}}</p>
+  </header>
+  <div id="grid" class="row flex-grid">
+    {% assign posts = site.posts | where_exp:"post","post.is_generated != true" %}
+    {% for post in posts %}
+      {% if post.category == page.slug %}
+        <article class="box-item">
+          <div class="box-body">
+            <div class="box-info">
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                <h2 class="post-title">
+                  {{ post.title }}
+                </h2>
+              </a>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                <p class="description">{{ post.description }}</p>
+              </a>              
+              <div>
+                {% for tag in post.tags %}
+                  {% if tag != "" %}
+                    <a class="category" href="{{ site.baseurl}}/tags/#{{tag | slugify }}">{{ tag }}</a>
+                  {% endif %}
+                {% endfor %}
               </div>
             </div>
-          </article>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </main>
-</section>
+          </div>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+</main>

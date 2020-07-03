@@ -3,17 +3,18 @@
   padding: rem(30px);
   border-bottom: 5px solid $primaryColorDark;
   width: 100%;
-  
-  // @include media(">=sm") {
-  //   padding: rem(30px) rem(0px);
-  // }
+
+  &.transparent {
+    background-color: transparent;
+    border: 0;
+    position: inherit;
+    z-index: 999;
+  }
+
   .navbar-content {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    @include media("<md") {
-      margin: 0 32px;
-    }
     @include media(">=md") {
       max-width: $widthContainerMD;
     }
@@ -21,16 +22,18 @@
       max-width: $widthContainerLG;
     }
   }
+
   .logo-area {
     display: flex;
+
     .logo {
-       display: inline-block;
-       margin: 0;
-       height: rem(32px);
-       line-height: rem(32px);
-      //  line-height: rem(32px);
-       color: $primaryColorContrast;
-       padding: 4px 0;
+      display: inline-block;
+      margin: 0;
+      height: rem(32px);
+      line-height: rem(32px);
+    //  line-height: rem(32px);
+      color: $primaryColorContrast;
+      padding: 4px 0;
       @include media(">=sm") {
         height: rem(48px);
         line-height: rem(48px);
@@ -50,7 +53,6 @@
 
   }
 }
-
 
 .hide-mobile {
   @include media("<=sm") {

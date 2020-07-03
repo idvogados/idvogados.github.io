@@ -1,3 +1,109 @@
 ---
 layout: main
+home: true
 ---
+
+{% assign posts = site.posts | where_exp:"post","post.is_generated != true" %}
+
+
+<div class="principal white">
+  <div class="texto">
+    <h1>O idvogados conecta <span>entregadores & advogados</span>
+      de forma gratuita e totalmente anônima 🤝</h1>
+  </div>
+</div>
+<main class="home" role="main">
+  <section id="utilizacao" class="white">
+    <article>
+      <header>
+        <h1>Por que eu devo utilizar o app?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et.</p>
+        <h2>Causas frequentes relatadas pelos trabalhadores</h2>
+      </header>
+    </article>
+  </section>
+  <section id="como-surgiu">
+    <article>
+      <header>
+        <h1>Como surgiu a ideia?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+      </header>
+      <div class='embed-container'>
+        <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/v3B9w6wWNQA?start=1484&end=1952" 
+          frameborder="0" 
+          allow="accelerometer; 
+          autoplay; 
+          encrypted-media; 
+          gyroscope; 
+          picture-in-picture" 
+          allowfullscreen
+        ></iframe>
+      </div>
+    </article>
+  </section>
+  <section id="colabore" class="white">
+    <article>
+      <header>
+        <h1>Como posso colaborar?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </header>
+      <img class="img-colabore" src="./assets/img/colabore.svg" alt="Colabore">
+      <div class="btn-group">
+        <div class="btn secondary-btn">
+          <a href="/blog" target="_self">Quero financiar o projeto</a>
+        </div>
+        <div class="btn secondary-btn">
+          <a href="/blog" target="_self">Quero botar a mão na massa</a>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section id="informe">
+    <article>
+      <header>
+        <h1>Informe-se sobre seus direitos</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </header>
+      <div id="grid" class="row flex-grid">
+        <!-- Posts -->
+        {% for post in posts %}
+          {% if forloop.index <= 6 %}
+            <article class="box-item">
+              <div class="box-body">
+                <div class="box-info">
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                    <h2 class="post-title">
+                      {{ post.title }}
+                    </h2>
+                  </a>
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                    <p class="description">{{ post.description }}</p>
+                  </a>
+                  <a class="category" href="{{ site.baseurl }}/{{ site.categories_folder | default: 'category' }}/{{ post.category }}">
+                      <span>{{ post.category }}</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+        <div class="more-posts">
+          <div class="btn primary-btn">
+            <a href="/blog" target="_self">Leia mais artigos no blog</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+</main>

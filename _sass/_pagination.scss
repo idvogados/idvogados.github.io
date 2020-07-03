@@ -15,7 +15,7 @@
       svg {
         width: calc(100% - 20px);
         height: calc(100% - 20px);
-        fill: #fff;
+        fill: $mediumColorDark;
         margin: 10px;
         transition: all 0.3s ease;
       }
@@ -32,7 +32,7 @@
     }
 
     .page_number {
-      color: #fff;
+      color: $mediumColorDark;
       font-size: rem(17px);
       line-height: rem(22px);
       margin: 0 rem(10px);
@@ -54,7 +54,7 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      background-color: #fff;
+      background-color: $mediumColorDark;
       color: $primaryColor;
       padding: 0 rem(15px);
       border: 1px solid $primaryColor;
