@@ -7,6 +7,7 @@ node_modules
 vendor
 Gemfile.lock
 package-json.lock
+yarn.lock
 _site
 _drafts
 
