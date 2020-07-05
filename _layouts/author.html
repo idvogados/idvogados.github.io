@@ -40,7 +40,7 @@ layout: page
       </a>
     {% endif %}
     {% if page.linkedin_username %}
-      <a href="https://www.linkedin.com/in/{{ page.linkedin_username }}" title="LinkedIn">
+      <a href="https://www.linkedin.com/company/{{ page.linkedin_username }}" title="LinkedIn">
         <svg><use xlink:href="#icon-linkedin"></use></svg>
       </a>
     {% endif %}
@@ -75,7 +75,7 @@ layout: page
     {% assign author_urls = author_urls | append: '"https://www.instagram.com/' | append: page.instagram_username | append: '",' %}
 {% endif %}
 {% if page.linkedin_username %}
-    {% assign author_urls = author_urls | append: '"https://www.linkedin.com/in/' | append: page.linkedin_username | append: '",' %}
+    {% assign author_urls = author_urls | append: '"https://www.linkedin.com/company/' | append: page.linkedin_username | append: '",' %}
 {% endif %}
 
 <script type="application/ld+json">

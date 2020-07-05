@@ -62,7 +62,7 @@
             {% assign author_urls = author_urls | append: '"https://www.instagram.com/' | append: author.instagram_username | append: '",' %}
         {% endif %}
         {% if author.linkedin_username %}
-            {% assign author_urls = author_urls | append: '"https://www.linkedin.com/in/' | append: author.linkedin_username | append: '",' %}
+            {% assign author_urls = author_urls | append: '"https://www.linkedin.com/company/' | append: author.linkedin_username | append: '",' %}
         {% endif %}
         {% if page.math %}
         <script>

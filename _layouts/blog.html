@@ -50,7 +50,7 @@ layout: main
     {% assign social_urls = social_urls | append: '"https://www.instagram.com/' | append: site.instagram_username | append: '",' %}
 {% endif %}
 {% if site.linkedin_username %}
-    {% assign social_urls = social_urls | append: '"https://www.linkedin.com/in/' | append: site.linkedin_username | append: '",' %}
+    {% assign social_urls = social_urls | append: '"https://www.linkedin.com/company/' | append: site.linkedin_username | append: '",' %}
 {% endif %}
 
 <script type="application/ld+json">
