@@ -10,6 +10,14 @@ home: true
   <div class="texto">
     <h1>O idvogados conecta <span>entregadores & advogados</span>
       de forma gratuita e totalmente anônima 🤝</h1>
+      <div class="frame show-only-desktop">
+        <div class="notch"></div>
+        <div class="silence-btn"></div>
+        <div class="plus-btn"></div>
+        <div class="minus-btn"></div>
+        <div class="power-btn"></div>
+        <div class="screen"></div>
+      </div>
   </div>
 </div>
 <main class="home" role="main">
@@ -28,44 +36,51 @@ home: true
     <article>
       <header>
         <h1>Como surgiu a ideia?</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        <div class="row">
+          <p class="col-m2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <div class="col-m2">
+              <div class="embed-container">
+                <iframe 
+                  width="560" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/v3B9w6wWNQA?start=1484&end=1952" 
+                  frameborder="0" 
+                  allow="accelerometer; 
+                  autoplay; 
+                  encrypted-media; 
+                  gyroscope; 
+                  picture-in-picture" 
+                  allowfullscreen
+                ></iframe>
+            </div>
+        </div>
+          </div>
       </header>
-      <div class='embed-container'>
-        <iframe 
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/v3B9w6wWNQA?start=1484&end=1952" 
-          frameborder="0" 
-          allow="accelerometer; 
-          autoplay; 
-          encrypted-media; 
-          gyroscope; 
-          picture-in-picture" 
-          allowfullscreen
-        ></iframe>
-      </div>
     </article>
   </section>
   <section id="colabore" class="white">
     <article>
-      <header>
-        <h1>Como posso colaborar?</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </header>
-      <img class="img-colabore" src="./assets/img/colabore.svg" alt="Colabore">
-      <div class="btn-group">
-        <div class="btn secondary-btn">
-          <a href="/blog" target="_self">Quero financiar o projeto</a>
-        </div>
-        <div class="btn secondary-btn">
-          <a href="/blog" target="_self">Quero botar a mão na massa</a>
-        </div>
+      <div class="row">
+        <img class="img-colabore show-only-desktop col-m2" src="./assets/img/colabore.svg" alt="Colabore">
+        <header class="col-m2">
+          <h1>Como posso colaborar?</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <img class="img-colabore hide-only-desktop" src="./assets/img/colabore.svg" alt="Colabore">
+          <div class="btn-group">
+            <div class="btn secondary-btn">
+              <a href="/blog" target="_self">Quero financiar o projeto</a>
+            </div>
+            <div class="btn secondary-btn">
+              <a href="/blog" target="_self">Quero botar a mão na massa</a>
+            </div>
+          </div>
+        </header>
       </div>
     </article>
   </section>
@@ -90,7 +105,7 @@ home: true
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
                     <p class="description">{{ post.description }}</p>
                   </a>
-                  <a class="category" href="{{ site.baseurl }}/{{ site.categories_folder | default: 'category' }}/{{ post.category }}">
+                  <a class="category" href="{{ site.baseurl }}/{{ site.categories_folder | default: "category" }}/{{ post.category }}">
                       <span>{{ post.category }}</span>
                   </a>
                 </div>

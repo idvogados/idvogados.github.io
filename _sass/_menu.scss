@@ -17,6 +17,7 @@ body.has-push-menu {
 
   &.push-menu-to-right {
     left: 100vw;
+    position: static;
     overflow: hidden;
 
     .progress-bar {
@@ -36,7 +37,7 @@ aside.sidebar {
   top: 0;
   left: -100vw;
   background-color: $primaryColor;
-  z-index: 20;
+  z-index: 999;
 
   &.open {
     left: 0;

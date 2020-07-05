@@ -51,7 +51,12 @@
 }
 
 .img-colabore {
-  margin: 80px 140px;
+  @include media("<=sm") {
+    margin-bottom: rem(80px);
+  }
+  @include media("<=lg", ">sm") {
+    margin: rem(80px) rem(140px);
+  }
 }
 
 .primary-btn {
@@ -102,8 +107,8 @@
 }
 
 .home {
-  &>section {
-    &>article {
+  & > section {
+    & > article {
       padding: rem(62px) 0;
       margin: auto;
       @include mainFont(400);
@@ -116,6 +121,18 @@
       }
       @include media(">=lg") {
         max-width: $widthContainerLG;
+      }
+      .row {
+        @include media(">=lg") {
+          display: flex;
+          flex-direction: row;
+          .col-m2 {
+            flex: 1;
+            &:not(:first-child) {
+              margin-left: rem(32px);
+            }
+          }
+        }
       }
     }
   }
@@ -151,20 +168,107 @@
       max-width: 700px;
     }
 
-    &::before {    
+    .frame {    
       content: "";
       position: absolute;
-      background-color: #fff;
       z-index: 10;
       width: 13.75rem;
       height: 28.125rem;
       top: -90px;
       right: 0;
-      border-radius: 36px;
-      border: #F2F2F2 10px solid;
-      background-image: url("/assets/img/icon.svg");
-      background-position: center;
-      background-repeat: no-repeat;
+      .notch {  
+        content: "";
+        position: absolute;
+        background-color: $lightColorContrast;
+        width: 106px;
+        height: 16px;
+        top: 12px;
+        left: calc(50% - 53px);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        z-index: 1;
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: $primaryColorContrast;
+          width: 30px;
+          height: 4px;
+          left: calc(50% - 15px);
+          border-radius: 4px;
+          top: 4px;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: $primaryColorContrast;
+          width: 8px;
+          height: 8px;
+          left: calc(50% + 20px);
+          border-radius: 4px;
+          top: 2px;
+        }
+      }
+
+      .screen {
+        position: absolute;
+        border-radius: 30px;
+        border: $lightColor 12px solid;
+        background-color: $primaryColorContrast;
+        background-image: url("/assets/img/icon.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: calc(100% - 6px);
+        height: calc(100% - 12px);
+        right: 3px;
+        box-shadow: -10px 22px 34px rgba($color: $lightColorContrast, $alpha: 0.1);
+        &::before {
+          content: "";
+          position: absolute;
+          width: calc(100% + 16px);
+          top: -8px;
+          left: -8px;
+          height: calc(100% + 16px);
+          border-radius: 26px;
+          border: $lightColorContrast 8px solid;
+        }
+      }
+
+      .silence-btn {
+        position: absolute;
+        background-color: $lightColor;
+        width: 4px;
+        height: 16px;
+        top: 60px;
+        left: 1px;
+      }
+
+      .plus-btn {
+        position: absolute;
+        background-color: $lightColor;
+        width: 4px;
+        height: 32px;
+        top: 90px;
+        left: 1px;
+      }
+
+      .minus-btn {
+        position: absolute;
+        background-color: $lightColor;
+        width: 4px;
+        height: 32px;
+        top: 130px;
+        left: 1px;
+      }
+
+      .power-btn {
+        position: absolute;
+        background-color: $lightColor;
+        width: 4px;
+        height: 50px;
+        top: 102px;
+        right: 1px;
+      }
     }
   }
 
@@ -181,5 +285,17 @@
     background-size: cover;
     background-position-y: bottom;
     background-position-x: center;
+  }
+}
+
+.show-only-desktop {
+  @include media("<=lg") {
+    display: none !important;
+  }
+}
+
+.hide-only-desktop {
+  @include media(">lg") {
+    display: none !important;
   }
 }
