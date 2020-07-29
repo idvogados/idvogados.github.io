@@ -1,9 +1,7 @@
 # Site Settings
-name: idvogados
-title: idvogados
+name: Idvogados
+title: Idvogados
 description: Plataforma gratuita conectando trabalhadores e advogados.
-tags:
-  - blog
 email: contato@idvogados.org
 disqus_username: idvogados
 link-anchor:
@@ -17,8 +15,6 @@ link-button:
 link-footer:
   - title: Termos de Uso
     url: /termos-de-uso/
-  - title: Privacidade
-    url: /privacidade/
   - title: Imprint
     action: window.print()
 copyrightYear: 2020
@@ -27,8 +23,8 @@ copyrightYear: 2020
 # Remove the item if you don't need it
 github_username: idvogados
 facebook_username: idvogados
-twitter_username: idvogados
-instagram_username: idvogados
+twitter_username: idvogados_ofc
+instagram_username: idvogados.ofc
 linkedin_username: idvogados
 
 # Posts Settings
@@ -38,7 +34,7 @@ show_modal_on_exit: true
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-google_analytics: "" #"G-DTG3FDMY4V"
+google_analytics: "G-DTG3FDMY4V"
 language: "pt-BR"
 
 

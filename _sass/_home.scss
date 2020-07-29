@@ -32,6 +32,7 @@
   margin-bottom: 16px;
   display: inline-block;
   width: 340px;
+  text-decoration: none;
 
   &:before {
     width: 100%;
@@ -42,11 +43,6 @@
     bottom: 0px;
     border-bottom-left-radius: rem(4px);
     border-bottom-right-radius: rem(4px);
-  }
-  
-  a {
-    text-decoration: none;
-    margin: rem(34px);
   }
 }
 
@@ -62,26 +58,21 @@
 .primary-btn {
 
   background-color: $primaryColorLighten;
+  color: $primaryColorContrast !important;
 
   &:before, &:hover {
     background-color: $primaryColor;
   }
   
-  a {
-    color: $primaryColorContrast !important;
-  }
 }
 
 .secondary-btn {
   
   background-color: $secondaryColorLighten;
+  color: $secondaryColorDark !important;
 
   &:before, &:hover {
     background-color: $secondaryColor;
-  }
-  
-  a {
-    color: $secondaryColorDark !important;
   }
 }
 

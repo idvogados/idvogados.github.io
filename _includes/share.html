@@ -1,11 +1,23 @@
 <section class="share">
     <h3>{{ site.translations.text.share | default: "Compatilhar" }}</h3>
-    <a aria-label="{{ site.translations.button.share_on_facebook | default: 'Compatilhar no Facebook' }}" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
-    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="{{ site.translations.button.share_on_facebook | default: 'Compatilhar noFacebook' }}">
+    <a aria-label="{{ site.translations.button.share_on_facebook | default: 'Compatilhar no Facebook' }}" href="https://www.facebook.com/sharer/sharer.php?u=www.idvogados.org"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=600');return false;" title="{{ site.translations.button.share_on_facebook | default: 'Compatilhar no Facebook' }}">
         <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
     </a>
-    <a aria-label="{{ site.translations.button.share_on_twitter | default: 'Compatilhar no Twitter' }}" href="https://twitter.com/intent/tweet?text=&quot;{{ page.description }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.twitter_username }}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}"
-    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="{{ site.translations.button.share_on_twitter | default: 'Compatilhar noTwitter' }}">
+    {% assign hashtags = '' %}
+    {% for tag in page.tags %}
+      {% assign hashtags = hashtags | append: ',' | append: tag | remove: " " %}
+    {% endfor %}
+    <a aria-label="{{ site.translations.button.share_on_twitter | default: 'Compatilhar no Twitter' }}" href="https://twitter.com/intent/tweet?text=&quot;{{ page.description }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.twitter_username }}&hashtags={{ hashtags | remove_first: ',' }}"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=600');return false;" title="{{ site.translations.button.share_on_twitter | default: 'Compatilhar no Twitter' }}">
         <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+    </a>
+    <a aria-label="{{ site.translations.button.share_on_linkedin | default: 'Compatilhar no WhatsApp' }}" href="https://api.whatsapp.com/send?text=&quot;{{ page.description }}&quot;%20{{ site.url }}{{ page.url }}"
+    onclick="window.open(this.href, 'whatsapp-share', 'width=550,height=700');return false;" title="{{ site.translations.button.share_on_whatsapp | default: 'Compatilhar no WhatsApp' }}">
+        <svg class="icon icon-whatsapp"><use xlink:href="#icon-whatsapp"></use></svg>
+    </a>
+    <a aria-label="{{ site.translations.button.share_on_linkedin | default: 'Compatilhar no LinkedIn' }}" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title=&quot;{{ page.title }}&quot;&summary=&quot;{{ page.description }}&quot;&source={{ site.url }}"
+    onclick="window.open(this.href, 'linkedin-share', 'width=600,height=800');return false;" title="{{ site.translations.button.share_on_linkedin | default: 'Compatilhar no LinkedIn' }}">
+        <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg>
     </a>
 </section>

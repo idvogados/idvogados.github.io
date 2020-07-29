@@ -30,7 +30,6 @@
 
 .post-content {
   overflow-x: auto;
-  padding: rem(40px) 0;
 
   &.fullwidth {
     padding: rem(60px) rem(10px) 0;
@@ -65,6 +64,8 @@
   ul,
   ol,
   iframe,
+  blockquote,
+  .tag-title,
   .tags {
     margin: auto;
     @include media(">=md") {
@@ -85,6 +86,13 @@
       line-height: rem(40px);
       margin: rem(29px) auto 0;
     }
+  }
+
+  .tag-title span {
+    background-color: $primaryColor;
+    color: $primaryColorContrast;    
+    padding: rem(3px) rem(10px);
+    border-radius: rem(5px);
   }
 
   h1.post-title {
@@ -232,21 +240,8 @@
   h4 {
     color: $tertiaryColor;
   }
-  ul,
-  ol {
-    padding-left: rem(60px);
-  }
-
-  ul.post-list {
-    padding: 0 rem(20px);
-
-    @include media(">=sm") {
-      padding: 0;
-    }
-  }
 
   blockquote {
-    @include center(rem(730px));
     border-left: rem(5px) solid $mediumColor;
     padding: 0 rem(10px);
     margin: rem(30px) auto;
@@ -458,11 +453,6 @@
   ul.post-list {
     list-style: none;
     margin: rem(25px) auto 0;
-    padding: 0 rem(10px);
-
-    @include media(">=sm") {
-      padding: 0;
-    }
 
     a {
       display: flex;

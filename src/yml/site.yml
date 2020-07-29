@@ -1,8 +1,6 @@
 name: Idvogados
 title: Idvogados
 description: Plataforma gratuita conectando trabalhadores e advogados.
-tags:
-  - blog
 email: contato@idvogados.org
 disqus_username: idvogados
 link-anchor:
@@ -16,8 +14,6 @@ link-button:
 link-footer:
   - title: Termos de Uso
     url: /termos-de-uso/
-  - title: Privacidade
-    url: /privacidade/
   - title: Imprint
     action: window.print()
 copyrightYear: 2020
