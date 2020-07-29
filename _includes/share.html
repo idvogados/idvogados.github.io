@@ -1,6 +1,6 @@
 <section class="share">
     <h3>{{ site.translations.text.share | default: "Compatilhar" }}</h3>
-    <a aria-label="{{ site.translations.button.share_on_facebook | default: 'Compatilhar no Facebook' }}" href="https://www.facebook.com/sharer/sharer.php?u=www.idvogados.org"
+    <a aria-label="{{ site.translations.button.share_on_facebook | default: 'Compatilhar no Facebook' }}" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
     onclick="window.open(this.href, 'facebook-share','width=580,height=600');return false;" title="{{ site.translations.button.share_on_facebook | default: 'Compatilhar no Facebook' }}">
         <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
     </a>
