@@ -1,0 +1,90 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% assign title = '' %}
+  {% if page.layout == 'author' %}
+    {% assign title = page.display_name %}
+  {% elsif page.title %}
+    {% assign title = page.title | append: " | " | append: site.name %}
+  {% else %}
+    {% assign title = site.title %}
+  {% endif %}
+
+  {% assign image = '' %}
+  {% if page.image %}
+    {% assign image = page.image %}
+  {% else %}
+    {% assign image = "/assets/img/blog-image.png" | prepend: site.baseurl | prepend: site.url %}
+  {% endif %}
+
+  {% assign description = '' %}
+  {% if page.description %}
+      {% assign description = page.description | strip_html | strip_newlines | truncate: 160 %}
+  {% else %}
+      {% assign description = site.description %}
+  {% endif %}
+
+  {% assign url = '' %}
+  {% if paginator.page_trail %}
+      {% assign url = paginator.first_page_path | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+  {% else %}
+      {% assign url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+  {% endif %}
+
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  {% if page.tags %}
+      <meta name="keywords" content="{{ page.tags | join: ', ' }}">
+  {% endif %}
+
+  <!-- Social: Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description }}">
+  <meta property="twitter:image:src" content="{{ image }}">
+  {% if site.twitter_username %}
+      <meta name="twitter:site" content="@{{ site.twitter_username }}">
+  {% endif %}
+
+  <!-- Social: Facebook / Open Graph -->
+  <meta property="og:url" content="{{ url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:image" content="{{ image }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon" />
+  <link rel="manifest" href="{{ site.baseurl }}/assets/img/icons/site.webmanifest">  
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="194x194" href="{{ site.baseurl }}/assets/img/icons/favicon-194x194.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ site.baseurl }}/assets/img/icons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/img/icons/favicon-16x16.png">
+
+  <!-- Apple Touch Icons -->
+  <meta name="apple-mobile-web-app-title" content="Idvogados">
+  <link rel="mask-icon" href="{{ site.baseurl }}/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/icons/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
+
+  <!-- Windows 8 Tile Icons -->
+  <meta name="application-name" content="{{ site.name }}">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="{{ site.baseurl }}/assets/img/icons/mstile-144x144.png">
+  
+  <!-- Android Lolipop Theme Color -->
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
+
+  <!-- JavaScript enabled/disabled -->
+  <script>
+      document.querySelector('html').classList.remove('no-js');
+  </script>
+</head>
+

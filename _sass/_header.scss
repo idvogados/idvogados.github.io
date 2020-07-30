@@ -1,0 +1,135 @@
+.bar-header {
+  background-color: $primaryColor;
+  padding: rem(24px) rem(32px);
+  border-bottom: rem(5px) solid $primaryColorDark;
+  width: 100%;
+
+  @include media(">=md") {
+    padding: rem(32px);
+  }
+  &.transparent {
+    background-color: transparent;
+    border: 0;
+    position: inherit;
+    z-index: 999;
+  }
+
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    @include media(">=md") {
+      max-width: $widthContainerMD;
+    }
+    @include media(">=lg") {
+      max-width: $widthContainerLG;
+    }
+  }
+
+  .logo-area {
+    display: flex;
+
+    .logo {
+      display: inline-block;
+      margin: 0;
+      height: rem(48px);
+      line-height: rem(48px);
+      color: $primaryColorContrast;
+      padding: rem(4px) 0;
+    }
+  }
+  
+  .svg {
+    cursor: pointer;
+    line-height: 0;
+
+    .icon-menu {
+      width: rem(32px);
+      height: rem(32px);
+      margin: rem(8px) 0;
+      fill: $primaryColorContrast;
+    }
+
+  }
+}
+
+.hide-mobile {
+  @include media("<=sm") {
+    display: none !important;
+  }
+}
+
+.only-mobile {
+  display: block;
+  @include media(">sm") {
+    display: none;
+  }
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  @include mainFont(500);
+  font-size: rem(14px);
+  text-transform: uppercase;
+  li {      
+    &.active {
+      font-weight: 700;        
+      &:before {
+        display: block !important;
+      }
+    }
+    &.link-button {
+      margin-left: rem(20px);
+    } 
+    &.link-anchor {
+      margin: 0px rem(20px);
+      position: relative;
+      &:hover {
+        font-weight: 700;
+      }
+      &:before {
+        content: "";
+        width: rem(22px);
+        height: rem(4px);
+        position: absolute;
+        background-color: #FFFFFF;
+        bottom: 0;
+        display: none;
+      }
+      &:hover:before {
+        display: block;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      height: 100%;
+      line-height: rem(48px);
+      display: block;
+    }
+  }
+}
+
+// .overlay {
+//   position: fixed;
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   right: 0;
+//   left: 0;
+//   bottom: 0;
+//   pointer-events: none;
+//   background: rgba(0, 0, 0, 0.6);
+//   z-index: 17;
+//   opacity: 0;
+//   transition: all 0.3s;
+
+//   &.show {
+//     pointer-events: auto;
+//     opacity: 1;
+//   }
+// }

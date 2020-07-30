@@ -1,0 +1,107 @@
+<footer>
+  <div class="row">
+    <div class="col">
+      <a class="logo" href="{{ site.baseurl }}/">
+        {% include logo.html %}
+      </a>
+      <p class="description">{{ site.description }}</p>
+      <ul>
+        {% include link-button.html %}
+      </ul>
+    </div>
+    <div class="col links-footer">
+      <ul class="hide-mobile">
+        {% include link-anchor.html %}
+      </ul>
+      <ul>
+        {% include link-footer.html %}
+      </ul>
+    </div>
+    <div class="col">
+      <a class="email" href="mailto:{{site.email}}">{{site.email}}</a>
+      <p class="social-media">
+        {% if site.github_username %}
+          <a href="https://github.com/{{ site.github_username }}" title="Github" target="_blank">
+            <svg><use xlink:href="#icon-github"></use></svg>
+          </a>
+        {% endif %}
+        {% if site.facebook_username %}
+          <a href="https://www.facebook.com/{{ site.facebook_username }}" title="Facebook" target="_blank">
+            <svg><use xlink:href="#icon-facebook"></use></svg>
+          </a>
+        {% endif %}
+        {% if site.twitter_username %}
+          <a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter" target="_blank">
+            <svg><use xlink:href="#icon-twitter"></use></svg>
+          </a>
+        {% endif %}
+        {% if site.medium_username %}
+          <a href="https://medium.com/@{{ site.medium_username }}" title="Medium" target="_blank">
+            <svg><use xlink:href="#icon-medium"></use></svg>
+          </a>
+        {% endif %}
+        {% if site.instagram_username %}
+          <a href="https://www.instagram.com/{{ site.instagram_username }}" title="Instagram" target="_blank">
+            <svg><use xlink:href="#icon-instagram"></use></svg>
+          </a>
+        {% endif %}
+        {% if site.linkedin_username %}
+          <a href="https://www.linkedin.com/company/{{ site.linkedin_username }}" title="LinkedIn" target="_blank">
+            <svg><use xlink:href="#icon-linkedin"></use></svg>
+          </a>
+        {% endif %}
+      </p>
+    </div>
+  </div>
+  <div class="copyright">
+    &copy; {{ site.copyrightYear }} Todos os direitos reservados - {{ site.title }}
+  </div>
+</footer>
+
+{% assign social_urls = '' %}
+{% if site.github_username %}
+    {% assign social_urls = social_urls | append: '"https://github.com/' | append: site.github_username | append: '",' %}
+{% endif %}
+{% if site.facebook_username %}
+    {% assign social_urls = social_urls | append: '"https://www.facebook.com/' | append: site.facebook_username | append: '",' %}
+{% endif %}
+{% if site.twitter_username %}
+    {% assign social_urls = social_urls | append: '"https://twitter.com/' | append: site.twitter_username | append: '",' %}
+{% endif %}
+{% if site.medium_username %}
+    {% assign social_urls = social_urls | append: '"https://medium.com/@' | append: site.medium_username | append: '",' %}
+{% endif %}
+{% if site.instagram_username %}
+    {% assign social_urls = social_urls | append: '"https://www.instagram.com/' | append: site.instagram_username | append: '",' %}
+{% endif %}
+{% if site.linkedin_username %}
+    {% assign social_urls = social_urls | append: '"https://www.linkedin.com/company/' | append: site.linkedin_username | append: '",' %}
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "{{ site.name }}",
+  "description": "{{ site.description }}",
+  "url": "{{ site.url }}{{site.baseurl}}/",
+  "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}{{site.baseurl}}/assets/img/icons/mediumtile.png",
+      "width": "600",
+      "height": "315"
+  },
+  "sameAs": [
+    {{ social_urls | split: "," | join: "," }}
+  ]
+}
+</script>
+
+<!-- Include the script that allows Netlify CMS login -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<!-- Include the website scripts -->
+<script src="{{ '/assets/js/scripts.min.js' | prepend: site.baseurl }}"></script>
+
+<!-- Include Google Analytics script -->
+{% include stats.html %}

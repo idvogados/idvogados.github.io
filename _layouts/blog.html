@@ -1,0 +1,119 @@
+---
+layout: main
+---
+
+{% assign posts = site.posts | where_exp:"post","post.is_generated != true" %}
+
+<main class="blog" role="main">
+  <header>
+    <h1>Informe-se sobre seus direitos</h1>
+    <p>O Blog do Idvogados tem artigos escritos por profissionais da justiça e de diversas outras áreas. A proposta é discutir temas atuais sobre o direito trabalhista, a tecnologia da informação na vida do cidadão e os novos moldes da discriminação e precarização de grupos sociais.</p>
+  </header>
+  <!-- Posts -->
+  <section id="grid" class="row flex-grid">
+    {% for post in posts %}
+      <article class="box-item">
+        <div class="box-body">
+          <div class="box-info">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+              <h2 class="post-title">
+                {{ post.title }}
+              </h2>
+            </a>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+              <p class="description">{{ post.description }}</p>
+            </a>
+            <a class="category" href="{{ site.baseurl }}/{{ site.categories_folder | default: 'category' }}/{{ post.category }}">
+                <span>{{ post.category }}</span>
+            </a>
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </section>
+</main>
+
+{% assign social_urls = '' %}
+{% if site.github_username %}
+    {% assign social_urls = social_urls | append: '"https://github.com/' | append: site.github_username | append: '",' %}
+{% endif %}
+{% if site.facebook_username %}
+    {% assign social_urls = social_urls | append: '"https://www.facebook.com/' | append: site.facebook_username | append: '",' %}
+{% endif %}
+{% if site.twitter_username %}
+    {% assign social_urls = social_urls | append: '"https://twitter.com/' | append: site.twitter_username | append: '",' %}
+{% endif %}
+{% if site.medium_username %}
+    {% assign social_urls = social_urls | append: '"https://medium.com/@' | append: site.medium_username | append: '",' %}
+{% endif %}
+{% if site.instagram_username %}
+    {% assign social_urls = social_urls | append: '"https://www.instagram.com/' | append: site.instagram_username | append: '",' %}
+{% endif %}
+{% if site.linkedin_username %}
+    {% assign social_urls = social_urls | append: '"https://www.linkedin.com/company/' | append: site.linkedin_username | append: '",' %}
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebPage",
+  "mainEntity": {
+    "@type": "Blog",
+    "name": "{{ site.name }}",
+    "headline": "{{ site.title }}",
+    "description": "{{ site.description }}",
+    "url": "{{ site.url }}{{site.baseurl}}/",
+    "inLanguage": "{{ site.language }}",
+    "isFamilyFriendly": "true",
+    "creator": {
+        "@type": "Organization",
+        "name": "{{ site.name }}",
+        "url": "{{ site.url }}{{site.baseurl}}/",
+        "sameAs": [
+            {{ social_urls | split: "," | join: "," }}
+        ]
+    },
+    "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+        {% assign limit = 8 %}
+        {% for post in posts limit: limit %}
+            {% assign author = site.authors | where: "name", post.author | first %}
+            {
+                "@type": "BlogPosting",
+                "name": "{{ post.title }}",
+                "headline": "{{ post.subtitle }}",
+                "description": "{{ post.description }}",
+                "image": "{{ post.image }}",
+                "url": "{{ post.url | prepend: site.baseurl | prepend: site.url }}",
+                "inLanguage": "{{ site.language }}",
+                "dateCreated": "{{ post.date | date: '%Y-%m-%d/' }}",
+                "datePublished": "{{ post.date | date: '%Y-%m-%d/' }}",
+                "dateModified": "{{ post.date | date: '%Y-%m-%d/' }}",
+                "author": {
+                    "@type": "Person",
+                    "name": "{{ author.display_name }}",
+                    "url": "{{ author.url | prepend: site.baseurl | prepend: site.url }}"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "{{ site.name }}",
+                    "url": "{{ site.url }}{{site.baseurl}}/",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "{{ site.url }}{{site.baseurl}}/assets/img/blog-image.png",
+                        "width": "600",
+                        "height": "315"
+                    }
+                },
+                "mainEntityOfPage": "True",
+                "genre": "{{ post.category | capitalize }}",
+		        "articleSection": "{{ post.category | capitalize }}",
+                "keywords": [{{ post.tags | join: '","' | append: '"' | prepend: '"' }}]
+            }{% if forloop.last == false %},{% endif %}
+        {% endfor %}
+        ]
+    }
+  }
+}
+</script>

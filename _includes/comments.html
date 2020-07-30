@@ -1,0 +1,35 @@
+{% if site.disqus_username %}
+
+  <section class="comments">
+    <h3>{{ site.translations.text.comments | default: "Comentários" }}</h3>
+    <div id="disqus_thread"></div>
+  </section>
+  <script type="text/javascript">
+    let disqus_loaded = false;
+
+    const load_disqus = () => {
+      disqus_loaded = true;
+      const disqus_config = () => {
+        this.page.url = '{{page.url}}';
+        this.page.title = '{{page.title.replace("'", "\\'")}}';
+        // this.page.identifier = '';
+      };
+      const d = document, s = d.createElement('script');
+        
+      s.src = '//{{site.disqus_username}}.disqus.com/embed.js';
+      
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    };
+
+    window.onscroll = (e) => {
+      if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 800)) {
+        if (disqus_loaded==false)
+          load_disqus()
+      }
+    };    
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <script id="dsq-count-scr" src="//{{site.disqus_username}}.disqus.com/count.js" async></script>
+
+{% endif %}

@@ -1,0 +1,44 @@
+.staff {
+  @include media(">=sm") {
+    @include center(rem(800px));
+  }
+
+  .item:not(:last-child) {
+    border-bottom: 1px solid $lightColor;
+  }
+
+  img {
+    width: rem(150px);
+    margin: 0 rem(20px) rem(20px);
+
+    @include media(">=sm") {
+      width: rem(200px);
+      margin-bottom: rem(30px);
+    }
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin-bottom: rem(10px);
+
+    &.name {
+      padding-top: rem(10px);
+    }
+  }
+  svg {
+    @include size(25, 25);
+    margin-right: rem(10px);
+  }
+
+  a {
+    fill: darken($lightColor, 30%);
+    text-decoration: none;
+    border: none;
+    transition: all 0.3s;
+
+    &:hover {
+      fill: $primaryColor;
+    }
+  }
+}

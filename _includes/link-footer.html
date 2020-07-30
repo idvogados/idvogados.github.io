@@ -1,0 +1,12 @@
+{% for item in site.link-footer %}
+  {% if item.title %}
+    <li class="link-anchor">
+    {% if item.url %}
+      <a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}" target="_self">{{ item.title }}</a>
+    {% endif %}
+    {% if item.action %}
+      <a href="#!" onclick="{{ item.action }}" target="_self">{{ item.title }}</a>
+    {% endif %}
+    </li>
+  {% endif %}
+{% endfor %}
