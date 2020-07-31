@@ -1,8 +1,6 @@
 # Idvogados
 
-
-[[https://github.com/mm44m6/idvogados.github.io/blob/develop/Logo-idvogados-vermelho-01.svg]]
-
+![idvogados logo](https://github.com/mm44m6/idvogados.github.io/blob/develop/Logo-idvogados-vermelho-01.svg)
 
 Esse projeto, atualmente, utiliza a tecnologia [Jekyll](https://jekyllrb.com) e o template [Jekflix](https://github.com/thiagorossener/jekflix-template). Para realizar a configuração do seu ambiente, siga o passo-a-passo descrito na [documentação oficial do Jekyll](https://jekyllrb.com/docs/).
 
