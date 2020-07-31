@@ -1,6 +1,6 @@
 # Idvogados
 
-Esse projeto, atualmente, utiliza a tecnologia [Jekyll](https://jekyllrb.com' e o template [Jekflix](https://github.com/thiagorossener/jekflix-template). Para realizar a configuração do seu ambiente, siga o passo-a-passo descrito na [documentação oficial do Jekyll](https://jekyllrb.com/docs/).
+Esse projeto, atualmente, utiliza a tecnologia [Jekyll](https://jekyllrb.com) e o template [Jekflix](https://github.com/thiagorossener/jekflix-template). Para realizar a configuração do seu ambiente, siga o passo-a-passo descrito na [documentação oficial do Jekyll](https://jekyllrb.com/docs/).
 
 ## Rodando o projeto
 
