@@ -1,6 +1,6 @@
 # Idvogados
 
-Esse projeto, atualmente, utiliza a tecnologia [Jekyll]('https://jekyllrb.com') e o template [Jekflix]('https://github.com/thiagorossener/jekflix-template'). Para realizar a configuração do seu ambiente, siga o passo-a-passo descrito na [documentação oficial do Jekyll]('https://jekyllrb.com/docs/').
+Esse projeto, atualmente, utiliza a tecnologia [Jekyll](https://jekyllrb.com' e o template [Jekflix](https://github.com/thiagorossener/jekflix-template). Para realizar a configuração do seu ambiente, siga o passo-a-passo descrito na [documentação oficial do Jekyll](https://jekyllrb.com/docs/).
 
 ## Rodando o projeto
 
@@ -26,7 +26,7 @@ Seu projeto ficará disponivel no endereço http://localhost:4000/
 
 ## Como contribuir
 
-Utilizamos o conceito de [gitflow]('https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow'). 
+Utilizamos o conceito de [gitflow](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow). 
 
 Faça um fork da branch develop e, ao terminar o trabalho, realize um pull request. 
 
