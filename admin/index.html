@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Content Manager</title>
+  <title>Gestor de conteúdos - Idvogados</title>
 </head>
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
@@ -27,7 +27,7 @@
       // Internal id of the component
       id: "page",
       // Visible label
-      label: "Page",
+      label: "Página",
       // Fields the user need to fill out when adding an instance of the component
       fields: [],
       // Pattern to identify a block as being an instance of this component
@@ -56,15 +56,15 @@
       // Internal id of the component
       id: "figure",
       // Visible label
-      label: "Figure",
+      label: "Figura",
       // Fields the user need to fill out when adding an instance of the component
       fields: [
-        { name: 'image', label: 'Image', widget: 'image', allow_multiple: false },
-        { name: 'alt', label: 'Alternative Text', widget: 'string', required: false, hint: "Used for accessibility." },
-        { name: 'classes', label: 'Classes', widget: 'string', required: false, hint: 'Add styles to image.'},
-        { name: 'width', label: 'Width', widget: 'number', valueType: 'int', required: false },
-        { name: 'height', label: 'Height', widget: 'number', valueType: 'int', required: false },
-        { name: 'caption', label: 'Caption', widget: 'string', required: false },
+        { name: 'image', label: 'Imagem', widget: 'image', allow_multiple: false },
+        { name: 'alt', label: 'Texto Alternativo', widget: 'string', required: false, hint: "Usado para acessibilidade." },
+        { name: 'classes', label: 'Classes', widget: 'string', required: false, hint: 'Adicionar estilos à imagem.'},
+        { name: 'width', label: 'Largura', widget: 'number', valueType: 'int', required: false },
+        { name: 'height', label: 'Altura', widget: 'number', valueType: 'int', required: false },
+        { name: 'caption', label: 'Legenda', widget: 'string', required: false },
       ],
       // Pattern to identify a block as being an instance of this component
       pattern: /{%\s*figure\s*{\s*"image"\s*:\s*"(.*?)"\s*,?\s*(?:"alt"\s*:\s*"(.*?)")?\s*,?\s*(?:"classes"\s*:\s*"(.*?)")?\s*,?\s*(?:"width"\s*:\s*"([0-9]*)")?\s*,?\s*(?:"height"\s*:\s*"([0-9]*)")?\s*,?\s*(?:"caption"\s*:\s*"(.*?)")?\s*}\s*%}/,
@@ -117,12 +117,12 @@
       label: "Figure URL",
       // Fields the user need to fill out when adding an instance of the component
       fields: [
-        { name: 'image', label: 'Image URL', widget: 'string'},
-        { name: 'alt', label: 'Alternative Text', widget: 'string', required: false, hint: "Used for accessibility." },
-        { name: 'classes', label: 'Classes', widget: 'string', required: false, hint: 'Add styles to image.'},
-        { name: 'width', label: 'Width', widget: 'number', valueType: 'int', required: false },
-        { name: 'height', label: 'Height', widget: 'number', valueType: 'int', required: false },
-        { name: 'caption', label: 'Caption', widget: 'string', required: false },
+        { name: 'image', label: 'URL da Imagem', widget: 'string'},
+        { name: 'alt', label: 'Texto Alternativo', widget: 'string', required: false, hint: "Usado para acessibilidade." },
+        { name: 'classes', label: 'Classes', widget: 'string', required: false, hint: 'Adicionar estilos à imagem.'},
+        { name: 'width', label: 'Largura', widget: 'number', valueType: 'int', required: false },
+        { name: 'height', label: 'Altura', widget: 'number', valueType: 'int', required: false },
+        { name: 'caption', label: 'Legenda', widget: 'string', required: false },
       ],
       // Pattern to identify a block as being an instance of this component
       pattern: /{%\s*figure_url\s*{\s*"image"\s*:\s*"(.*?)"\s*,?\s*(?:"alt"\s*:\s*"(.*?)")?\s*,?\s*(?:"classes"\s*:\s*"(.*?)")?\s*,?\s*(?:"width"\s*:\s*"([0-9]*)")?\s*,?\s*(?:"height"\s*:\s*"([0-9]*)")?\s*,?\s*(?:"caption"\s*:\s*"(.*?)")?\s*}\s*%}/,
@@ -168,7 +168,6 @@
 
   <!-- Include preview styles -->
   <script>
-    CMS.registerPreviewStyle("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700");
     CMS.registerPreviewStyle("/assets/css/preview.css");
   </script>
 
@@ -185,7 +184,7 @@
           }
 
           if (date) {
-            var months = 'January,February,Mark,April,May,June,July,August,September,October,November,December'.split(',');
+            var months = 'Janeiro,Fevereiro,Março,Abril,Maio,Junho,Julho,Agosto,Setembro,Outubro,Novembro,Dezembro'.split(',');
             var monthNumber = date.getMonth();
             return months[monthNumber] + ' ' + date.getDate() + ', ' + date.getFullYear();
           }
@@ -216,20 +215,6 @@
         // Post Subtitle
         var postSubtitle = h('p', {'className': 'post-subtitle'}, entry.getIn(['data', 'subtitle']));
         elements.push(postSubtitle);
-
-        // Featured Image
-        if (!paginate) {
-          var image = entry.getIn(['data', 'image']);
-          var bg = this.props.getAsset(image);
-          var featuredImage = h('img', {'className': 'post-cover', 'src': bg.toString()});
-          elements.push(featuredImage);
-        }
-
-        // Space
-        if (paginate) {
-          var space = h('br', {});
-          elements.push(space);
-        }
 
         // Body
         var body = h('div', {'className': 'text'}, this.props.widgetFor('body'));

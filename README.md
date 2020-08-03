@@ -58,7 +58,7 @@ link-footer:
     url: /termos-de-uso/
   - title: Imprint
     action: window.print()
-copyrightYear: 2020
+copyright-year: 2020
 
 # Social Media Settings
 # Remove the item if you don't need it
