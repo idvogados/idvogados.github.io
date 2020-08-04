@@ -1,7 +1,7 @@
 # Site Settings
 name: Idvogados
 title: Idvogados
-description: Plataforma gratuita conectando trabalhadores e advogados.
+description: Projeto de acesso à justiça. 
 email: contato@idvogados.org
 disqus_username: idvogados
 link-anchor:
@@ -25,7 +25,7 @@ github_username: idvogados
 facebook_username: idvogados
 twitter_username: idvogados_ofc
 instagram_username: idvogados.ofc
-linkedin_username: idvogados
+linkedin_username: idvogados-org
 
 # Posts Settings
 show_modal_on_exit: true
