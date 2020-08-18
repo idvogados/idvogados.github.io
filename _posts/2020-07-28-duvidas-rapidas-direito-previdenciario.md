@@ -1,8 +1,5 @@
 ---
 layout: post
-author: idvogados
-permalink: blog/:title
-date: 2020-07-28 13:24:49
 title: "Dúvidas rápidas: Direito previdenciário"
 subtitle: A série dúvidas rápidas tem o objetivo de trazer, de forma prática e
   sucinta uma resposta às perguntas mais comuns referentes ao tema 😃.
@@ -12,12 +9,15 @@ description: Principais dúvidas referentes aos benefícios a serem solicitados,
 category: duvidas
 tags:
   - direito previdenciário
+author: idvogados
+permalink: blog/:title
+date: 2020-07-28 13:24:49
 ---
 Na coluna *direito previdenciário* serão apresentadas as principais dúvidas referentes aos benefícios a serem solicitados, bem como *quem poderá requerê-los*, de *quanto* será o benefício e prazo para sua solicitação.
 
 Vale lembrar que todas as questões possuem caráter ilustrativo, então, se você tiver qualquer dúvida ou quiser saber mais sobre algum dos benefícios, não pense duas vezes antes de entrar em contato com a gente 😉.
 
-Bem, vamos às perguntas ...
+Bem, vamos às perguntas...
 
 - - -
 
