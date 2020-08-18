@@ -1,23 +1,24 @@
 ---
-date: 2020-07-28 13:24:49
 layout: post
-title: 'Dúvidas rápidas: Direito penal'
-description: Principais dúvidas referentes aos procedimentos a serem adotados em caso de violência, ameaça ou constrangimento causado por terceiros.
-subtitle: A série dúvidas rápidas tem o objetivo de trazer, de forma prática e sucinta uma resposta às perguntas mais comuns referentes ao tema 😃.
-category: 'duvidas'
+title: "Dúvidas rápidas: Direito penal"
+subtitle: A série dúvidas rápidas tem o objetivo de trazer, de forma prática e
+  sucinta uma resposta às perguntas mais comuns referentes ao tema 😃.
+description: Principais dúvidas referentes aos procedimentos a serem adotados em
+  caso de violência, ameaça ou constrangimento causado por terceiros.
+category: duvidas
 tags:
   - direito penal
 author: idvogados
 permalink: blog/:title
+date: 2020-07-28 13:24:49
 ---
-
-Na coluna _direito penal_ serão apresentados as principais dúvidas referentes aos procedimentos a serem adotados em caso de violência, ameaça ou constrangimento causado por terceiros.
+Na coluna *direito penal* serão apresentados as principais dúvidas referentes aos procedimentos a serem adotados em caso de violência, ameaça ou constrangimento causado por terceiros.
 
 Vale lembrar que todas as questões possuem caráter ilustrativo, então, se você tiver qualquer dúvida ou quiser saber mais sobre algum dos benefícios, não pense duas vezes antes de entrar em contato com a gente 😉.
 
-Bem, vamos às perguntas ...
+Bem, vamos às perguntas...
 
-----
+- - -
 
 **Pergunta**: Me roubaram durante uma entrega, como devo proceder? 
 
@@ -25,19 +26,13 @@ Bem, vamos às perguntas ...
 
 De qualquer forma, o indicado é ir a uma Delegacia de Polícia para prestar *notícia-crime* sobre o fato (será a partir desta que a Delegacia passará a realizar investigação sobre o fato). O ideal é que você seja acompanhado por um advogado, que irá lhe auxiliar no relato do caso e orientar sobre as novas providências a serem tomadas.
 
-  
-
 **Pergunta**: Acabei me atrasando na entrega de um pedido e, ao chegar ao destino, o cliente me ameaçou. O que devo fazer? 
 
 **Resposta:** Ameaça é crime previsto no art. 147, do Código Penal, com pena prevista de um a seis meses de detenção. Caso você sinta-se ameaçado com um comportamento de um cliente, você deverá comparecer a uma Delegacia de Polícia para realizar *notícia-crime* do fato, relatando o ocorrido, local e, se possível, mostrar *prints* que ajudem a identificação do agressor.
 
-  
-
 **Pergunta**: Qual é a diferença entre *ameaça* e *constrangimento*?
 
 **Resposta**: A *ameaça* pressupõe que o *agressor* tenha, de forma injusta ou excedente, ameaçado a sua integridade física, de modo que você ficasse com medo de continuar no mesmo espaço ou de retornar à localidade. A ameaça encontra-se prevista no art. 147, do Código Penal, e é punível com detenção de um a seis meses; o *constrangimento*, por sua vez, é previsto no Código Civil, e pressupõe que o *agressor* tenha, também de forma injusta ou excedente, ofendido a sua *honra* e *moral*, de modo que você não tenha ficado com *medo* de retornar ao local, mas tão somente desconfortável com a situação.
-
-  
 
 **Pergunta**: Fui ofendido por um cliente, como devo proceder? 
 
