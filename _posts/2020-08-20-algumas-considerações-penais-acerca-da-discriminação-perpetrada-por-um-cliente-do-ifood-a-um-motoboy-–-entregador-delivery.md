@@ -1,8 +1,8 @@
 ---
 date: 2020-08-19 23:11:15
 layout: post
-title: ALGUMAS CONSIDERAÇÕES PENAIS ACERCA DA DISCRIMINAÇÃO PERPETRADA POR UM
-  CLIENTE DO IFOOD A UM MOTOBOY – ENTREGADOR DELIVERY
+title: Algumas considerações penais acerca da discriminação perpetrada por um
+  cliente do ifood a um motoboy – entregador delivery
 description: Breves considerações acerca das consequencias penais derivadas da
   discriminação perpetrada por um cliente do ifood à um motoboy
 category: duvidas
