@@ -9,7 +9,7 @@ description: Principais dúvidas referentes aos procedimentos a serem adotados e
 category: duvidas
 tags:
   - direito penal
-author: idvogados
+author: fred
 ---
 Na coluna *direito penal* serão apresentados as principais dúvidas referentes aos procedimentos a serem adotados em caso de violência, ameaça ou constrangimento causado por terceiros.
 
