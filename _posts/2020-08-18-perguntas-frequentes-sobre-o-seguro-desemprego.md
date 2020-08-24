@@ -7,7 +7,7 @@ description: Conjunto com cinco perguntas e respostas sobre os principais
 category: faq
 tags:
   - seguro desemprego
-author: luciene
+author: idvogados
 ---
 Sabemos como o *seguro desemprego* pode causar confusão na hora de solicitar e até mesmo de saber se existe (ou não) direito a requere-lo.
 
