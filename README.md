@@ -52,7 +52,7 @@ link-anchor:
     url: /blog/
 link-button:
   - title: Quero Colaborar
-    url: /colabore/
+    url: https://linktr.ee/idvogados
 link-footer:
   - title: Termos de Uso
     url: /termos-de-uso/
