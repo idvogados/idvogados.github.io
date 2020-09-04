@@ -11,7 +11,7 @@ link-anchor:
     url: /blog/
 link-button:
   - title: Quero Colaborar
-    url: /colabore/
+    url: https://linktr.ee/idvogados
 link-footer:
   - title: Termos de Uso
     url: /termos-de-uso/
@@ -24,8 +24,9 @@ copyright-year: 2020
 github_username: idvogados
 facebook_username: idvogados
 twitter_username: idvogados_ofc
-instagram_username: idvogados.ofc
+instagram_username: projeto_idvogados
 linkedin_username: idvogados
+medium_username: idvogados
 
 # Posts Settings
 show_modal_on_exit: true
