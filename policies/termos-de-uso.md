@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Termos de Uso
-description: Termos de uso do projeto.
+description: Termos de uso do projeto Idvogados.
 permalink: /termos-de-uso/
 ---
 
-# Termos de Uso (geral)
+# Termos de Uso
 
 ## 1. O que este Termo de Uso compreende?
 
@@ -166,3 +166,9 @@ As denúncias de comportamento são anônimas (ficando a critério do colaborado
 ## 9. Alterações dos Termos de Uso (Colaboradores)
 
 Estes termos estão sujeitos a alterações, que podem ser realizadas a qualquer momento. A informação sempre será atualizada nesta página, mantendo a política atual sempre disponível aos usuários.
+
+
+## Outros termos importantes do projeto Idvogados
+- [Termos de Confidencialidade e Não Divulgação](/termos-confidencialidade/)
+- [Política de privacidade do Usuário](/politica-privacidade-usuario/)
+- [Política de privacidade do Parceiro](/politica-privacidade-parceiro/)
