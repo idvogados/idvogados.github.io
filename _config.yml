@@ -1,14 +1,10 @@
 # Site Settings
 name: Idvogados
 title: Idvogados
-description: Projeto de acesso à justiça. 
-email: contato@idvogados.org
-disqus_username: idvogados
+description: Projeto de acesso à justiça.
 link-anchor:
   - title: Home
     url: /
-  - title: Blog
-    url: /blog/
 link-button:
   - title: Quero Colaborar
     url: /colabore/
@@ -17,6 +13,8 @@ link-footer:
     url: /termos-de-uso/
   - title: Imprint
     action: window.print()
+email: contato@idvogados.org
+disqus_username: idvogados
 copyright-year: 2020
 
 # Social Media Settings
@@ -30,22 +28,20 @@ linkedin_username: idvogados-org
 # Posts Settings
 show_modal_on_exit: true
 
-
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://idvogados.org" # the base hostname & protocol for your site
 google_analytics: "G-DTG3FDMY4V"
 language: "pt-BR"
 
-
 # Pagination Settings
 paginate_path: "/page/:num/"
 pagination:
   per_page: 6
-  permalink: '/page/:num/'
-  title: ' - page :num'
+  permalink: "/page/:num/"
+  title: " - page :num"
   limit: 0
-  sort_field: 'date'
+  sort_field: "date"
   sort_reverse: true
 
 # Build settings
@@ -62,21 +58,21 @@ categories_folder: category
 sass:
   style: compressed
 
-  
 # Plugins
 plugins:
   - jekyll-paginate-v2
   - jekyll-paginate-content
 
 # Exclude my node related stuff
-exclude: [
-  'package.json',
-  'package-lock.json',
-  'src',
-  'node_modules',
-  'initpost.sh',
-  'Gemfile',
-  'Gemfile.lock',
-  'gulpfile.js',
-  'README.md'
-]
+exclude:
+  [
+    "package.json",
+    "package-lock.json",
+    "src",
+    "node_modules",
+    "initpost.sh",
+    "Gemfile",
+    "Gemfile.lock",
+    "gulpfile.js",
+    "README.md",
+  ]
