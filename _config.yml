@@ -13,7 +13,7 @@ link-footer:
     url: /termos-de-uso/
   - title: Imprint
     action: window.print()
-email: contato@idvogados.org
+email: idvogados@outlook.com
 disqus_username: idvogados
 copyright-year: 2020
 
@@ -30,7 +30,7 @@ show_modal_on_exit: true
 
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://idvogados.org" # the base hostname & protocol for your site
+url: "https://idvogados.github.io" # the base hostname & protocol for your site
 google_analytics: "G-DTG3FDMY4V"
 language: "pt-BR"
 

@@ -23,7 +23,6 @@ link-footer:
     action: window.print()
   - title: RSS
     url: /feed.xml
-# email: contato@idvogados.org
-email: parceiro.idvogados@gmail.com
+email: idvogados@outlook.com
 disqus_username: idvogados
 copyright-year: 2020
