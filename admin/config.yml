@@ -389,7 +389,7 @@ collections:
           - label: "URL"
             name: "url"
             widget: "string"
-            hint: "O nome do host e o protocolo base do seu site, por exemplo https://idvogados.org"
+            hint: "O nome do host e o protocolo base do seu site, por exemplo https://idvogados.github.io"
           - label: "Google Analytics ID"
             name: "google_analytics"
             widget: "string"
@@ -403,5 +403,3 @@ collections:
             widget: "string"
             hint: "Pasta onde estão todas as páginas de categorias. Ex: category"
             required: false
-
-

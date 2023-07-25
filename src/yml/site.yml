@@ -1,6 +1,13 @@
 name: Idvogados
 title: Idvogados
 description: Projeto de acesso à justiça.
+tags:
+  - Idvogados
+  - Justiça
+  - Advogados
+  - Entregadores
+  - Trabalhadores
+  - GregNews
 link-anchor:
   - title: Home
     url: /
@@ -8,12 +15,14 @@ link-anchor:
     url: /blog/
 link-button:
   - title: Quero Colaborar
-    url: /colabore/
+    url: https://linktr.ee/idvogados
 link-footer:
   - title: Termos de Uso
     url: /termos-de-uso/
   - title: Imprint
     action: window.print()
-email: contato@idvogados.org
+  - title: RSS
+    url: /feed.xml
+email: idvogados@outlook.com
 disqus_username: idvogados
 copyright-year: 2020

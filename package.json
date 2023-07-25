@@ -4,7 +4,7 @@
   "description": "Plataforma gratuita conectando trabalhadores e advogados.",
   "main": "gulpfile.js",
   "repository": "https://github.com/idvogados/idvogados.github.io.git",
-  "author": "idvogados <contato@idvogados.org>",
+  "author": "idvogados <idvogados@outlook.com>",
   "license": "EUPL-1.2",
   "devDependencies": {
     "browser-sync": "^2.26.7",
