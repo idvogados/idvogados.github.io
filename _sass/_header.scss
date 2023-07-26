@@ -1,16 +1,12 @@
 .bar-header {
   background-color: $primaryColor;
-  padding: rem(24px) rem(32px);
+  padding: rem(14px) rem(32px);
   border-bottom: rem(5px) solid $primaryColorDark;
   width: 100%;
   border: 0;
   position: fixed;
   top:0;
   z-index: 999;
-
-  @include media(">=md") {
-    padding: rem(32px);
-  }
 
   .navbar-content {
     display: flex;
