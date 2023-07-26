@@ -5,9 +5,13 @@ description: Projeto de acesso à justiça.
 link-anchor:
   - title: Home
     url: /
+  - title: Se informe
+    url: /blog/
+  - title: Colabore
+    url: /colabore
 link-button:
-  - title: Quero Colaborar
-    url: /colabore/
+  - title: Ajuda Profissional
+    url: /pergunte/
 link-footer:
   - title: Termos de Uso
     url: /termos-de-uso/

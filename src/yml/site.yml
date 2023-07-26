@@ -11,11 +11,13 @@ tags:
 link-anchor:
   - title: Home
     url: /
-  - title: Blog
+  - title: Se informe
     url: /blog/
+  - title: Colabore
+    url: /colabore
 link-button:
-  - title: Quero Colaborar
-    url: https://linktr.ee/idvogados
+  - title: Ajuda Profissional
+    url: /pergunte/
 link-footer:
   - title: Termos de Uso
     url: /termos-de-uso/
