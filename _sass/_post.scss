@@ -29,7 +29,7 @@
 }
 
 .post-content {
-  margin-top:120px;
+  margin-top:90px;
   overflow-x: auto;
 
   &.fullwidth {
@@ -97,6 +97,8 @@
   }
 
   h1.post-title {
+    font-size:rem(26px);
+    text-transform:uppercase;
     line-height: 1.2;
     margin: rem(5px) auto rem(10px);
     padding-top: 0;
@@ -104,7 +106,7 @@
 
   p.post-subtitle {
     color: darken($lightColor, 30%);
-    font-size: rem(17px);
+    font-size: rem(16px);
     margin: rem(10px) auto;
     line-height: 1.6;
 
